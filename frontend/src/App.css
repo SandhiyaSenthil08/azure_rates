@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  
+}
+
+h1 {
+  text-align: left;
+  position: sticky;
+  top:0;
+  color: #0056b3;
+  z-index: 100;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+p{
+  text-align: left;
+  font-weight: normal;
+  font-size:16px; 
+  position: relative;
+ position: sticky;
+}
+
+.container {
+  width: 100%;
+  background-attachment: fixed;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height:90%;
+  overflow-x: auto;
+  position: sticky;
+  overflow-y: auto;
+}
+
+
+table {
+  width: 100%;
+  top:50px;
+  height:90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  position: sticky;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  position: sticky;
+  border: 1px solid #000000;
+  font-size: 14px;
+  width: 5px;
+  height: 5px;
+}
+
+th {
+  text-align: left;
+  position: sticky;
+  top: 100px; /* Adjust this value based on the height of the content above (filter section) */
+  z-index: 10;
+  background-color: #0458b2;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+tr {
+  background-color: #f2f2f2;
+  width:20%;
+  height:20%;
+  
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.export-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+
+.export-btn:hover {
+  background-color: #0f59c9;
+}
+
+.filter-container {
+  position: sticky;
+  top:45px;/* Sticks at the top of the viewport */
+  background-color : white;
+  padding: 10px;
+  z-index: 100; /* Keep it above the table header */
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #ccc;
+ 
+  
+}
+
+.filter-container input,
+.filter-container select,
+.filter-container button {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}
+
+.filter-container button {
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-container button:hover {
+  background-color: #003f7f;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.page-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.page-btn:hover:not(:disabled) {
+  background-color: #0f59c9;
+}
+
+/* Page number display */
+.pagination span {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
