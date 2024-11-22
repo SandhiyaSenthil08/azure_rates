@@ -12,7 +12,6 @@ h1 {
   top:0;
   color: #0056b3;
   z-index: 100;
-  padding: 10px;
   font-weight: bold;
   font-size: 25px;
 }
@@ -21,13 +20,10 @@ p{
   text-align: left;
   font-weight: normal;
   font-size:16px; 
-  position: relative;
- position: sticky;
 }
 
 .container {
   width: 100%;
-  background-attachment: fixed;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height:90%;
@@ -59,7 +55,7 @@ th, td {
 th {
   text-align: left;
   position: sticky;
-  top: 100px; /* Adjust this value based on the height of the content above (filter section) */
+  top: 100px; 
   z-index: 10;
   background-color: #0458b2;
   color: white;
@@ -95,10 +91,10 @@ tr:hover {
 
 .filter-container {
   position: sticky;
-  top:45px;/* Sticks at the top of the viewport */
+  top:45px;
   background-color : white;
   padding: 10px;
-  z-index: 100; /* Keep it above the table header */
+  z-index: 100;
   display: flex;
   flex-wrap: nowrap;
   border-bottom: 1px solid #ccc;
